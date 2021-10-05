@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mozifilmek</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="center">    
+        <form>
+            <h2>Mozifilmek</h2>
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="rendezo">Rendező:</label>
+            <input type="text" id="rendezo" name="rendezo"><br><br>
+            <label for="kiadas">Kiadási év:</label>
+            <input type="date" id="kiadas" name="kiadas"><br><br>
+            <button onclick="hozzaadFunction()">Hozzáad</button>
+            <button onclick="listazFunction()">Listázás</button>
+          </form>
+    </div>
+    
+
+      <table id="tablazatom">
+          <tr>
+              <td id="1"></td>
+              <td id="2"></td>
+              <td id="3"></td>
+          </tr>
+      </table>
+</body>
+</html>
