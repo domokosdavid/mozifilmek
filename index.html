@@ -14,7 +14,6 @@
 </head>
 <body>
     <div class="center">    
-        <form>
             <h2>Mozifilmek</h2>
             <label for="name">Név:</label>
             <input type="text" id="name" name="name"><br><br>
@@ -22,12 +21,10 @@
             <input type="text" id="rendezo" name="rendezo"><br><br>
             <label for="kiadas">Kiadási év:</label>
             <input type="date" id="kiadas" name="kiadas"><br><br>
-            <button onclick="hozzaadFunction()">Hozzáad</button>
-            <button onclick="listazFunction()">Listázás</button>
-          </form>
+            <button id="hozzaad" onclick="hozzaadFunction()">Hozzáad</button>
+            <button id="listaz" onclick="listazFunction()">Listázás</button>
     </div>
     
-
       <table id="tablazatom">
       </table>
 </body>
