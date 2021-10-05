@@ -17,6 +17,19 @@ function hozzaadFunction(){
     
 }
 function listazFunction(){
-    var tablazat = document.getElementById("tablazatom");
-          document.getElementById("3").innerHTML = nev;
+    let check = document.getElementById("tablazat").innerHTML;
+    let tablazat = "";
+    if(check == ""){
+        let tablazat = "<table><tr><th>Név</th><th>Rendező</th><th>Kiadási év</th></tr>";
+        for(let i = 0; i<filmAdatai.length; i++){
+            tablazat += "<tr><td>"+filmek[i].nev+"</td>";
+            tablazat += "<tr><td>"+filmek[i].rendezo+"</td>";
+            tablazat += "<tr><td>"+filmek[i].kiadas+"</td></tr>";
+        }
+        tablazat += "</table>";
+        document.getElementById("tablazat").innerHTML = tablazat;
+    }
+    else {
+        document.getElementById("tablazat").innerHTML = "";
+    }
 }
